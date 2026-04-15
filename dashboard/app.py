@@ -17,7 +17,8 @@ from pipeline.detect_anomalies import run_detection
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+# Works locally via .env and on Streamlit Cloud via st.secrets
+DATABASE_URL = st.secrets.get("DATABASE_URL", None) or os.getenv("DATABASE_URL")
 engine = create_engine(DATABASE_URL)
 
 st.set_page_config(
