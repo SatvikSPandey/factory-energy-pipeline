@@ -282,6 +282,21 @@ streamlit run dashboard/app.py
 
 \---
 
+---
+
+## 📊 Power BI Dashboard
+
+A second dashboard was built in Power BI Desktop on top of the same Supabase PostgreSQL dataset, demonstrating BI reporting skills alongside the live Streamlit dashboard.
+
+![Power BI Dashboard](powerbi_dashboard.png)
+
+**Visuals included:**
+- Energy consumption over time by machine (line chart)
+- Total energy KPI card (173.44 kWh)
+- Energy by machine (bar chart)
+- Machine status distribution (pie chart — 70% running, 20% idle, 10% fault)
+
+> Note: The Power BI report uses an imported dataset snapshot. The Streamlit dashboard connects directly to the live PostgreSQL database for real-time updates.
 
 
 \## 👤 Author
